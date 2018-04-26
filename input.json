@@ -1,0 +1,156 @@
+{
+  "operations": [
+    "frezowanie",
+    "wiercenie",
+    "szlifowanie",
+    "malowanie",
+    "pakowanie"
+  ],
+  "rawMaterials": [
+    "metal",
+    "farba",
+    "opakowanie"
+  ],
+  "products": [
+    {
+      "name": "produkt1",
+      "bom": {
+        "metal": 23,
+        "farba": 1,
+        "opakowanie": 1
+      }
+    },
+    {
+      "name": "produkt2",
+      "bom": {
+        "metal": 23,
+        "farba": 1,
+        "opakowanie": 1
+      }
+    },
+    {
+      "name": "produkt3",
+      "bom": {
+        "metal": 23,
+        "farba": 1,
+        "opakowanie": 1
+      }
+    },
+    {
+      "name": "produkt4",
+      "bom": {
+        "metal": 23,
+        "farba": 1,
+        "opakowanie": 1
+      }
+    },
+    {
+      "name": "produkt5",
+      "bom": {
+        "metal": 23,
+        "farba": 1,
+        "opakowanie": 1
+      }
+    },
+    {
+      "name": "produkt6",
+      "bom": {
+        "metal": 23,
+        "farba": 1,
+        "opakowanie": 1
+      }
+    }
+  ],
+  "operationTimes": [
+    [
+      1,
+      2,
+      4,
+      6,
+      3,
+      2
+    ],
+    [
+      1,
+      2,
+      4,
+      6,
+      3,
+      2
+    ],
+    [
+      1,
+      2,
+      4,
+      6,
+      3,
+      2
+    ],
+    [
+      1,
+      2,
+      4,
+      6,
+      3,
+      2
+    ],
+    [
+      1,
+      2,
+      4,
+      6,
+      3,
+      2
+    ],
+    [
+      1,
+      2,
+      4,
+      6,
+      3,
+      2
+    ]
+  ],
+  "orders": [
+    {
+      "name": "zamowienie1",
+      "dueDate": "2018-06-05",
+      "items": {
+        "produkt1": 134,
+        "produkt6": 13
+      }
+    },
+    {
+      "name": "zamowienie2",
+      "dueDate": "2018-06-03",
+      "items": {
+        "produkt1": 11,
+        "produkt2": 13,
+        "produkt3": 4,
+        "produkt4": 8
+      }
+    }
+  ],
+  "deliveries": [
+    {
+      "name": "dostawa1'",
+      "date": "2018-06-01",
+      "rawMaterials": {
+        "metal": 50,
+        "farba": 50,
+        "opakowanie": 50
+      }
+    },
+    {
+      "name": "dostawa2'",
+      "date": "2018-06-03",
+      "rawMaterials": {
+        "metal": 50,
+        "farba": 50,
+        "opakowanie": 50
+      }
+    }
+  ],
+  "timeout": 300,
+  "maxgGeneration": 2000
+}
