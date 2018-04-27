@@ -1,4 +1,5 @@
 {
+  "productionStartDate": "2018-06-01T00:00:00",
   "operations": [
     "frezowanie",
     "wiercenie",
@@ -15,23 +16,23 @@
     {
       "name": "produkt1",
       "bom": {
-        "metal": 23,
-        "farba": 1,
+        "metal": 3,
+        "farba": 2,
         "opakowanie": 1
       }
     },
     {
       "name": "produkt2",
       "bom": {
-        "metal": 23,
+        "metal": 5,
         "farba": 1,
-        "opakowanie": 1
+        "opakowanie": 5
       }
     },
     {
       "name": "produkt3",
       "bom": {
-        "metal": 23,
+        "metal": 1,
         "farba": 1,
         "opakowanie": 1
       }
@@ -39,25 +40,25 @@
     {
       "name": "produkt4",
       "bom": {
-        "metal": 23,
-        "farba": 1,
-        "opakowanie": 1
+        "metal": 3,
+        "farba": 3,
+        "opakowanie": 3
       }
     },
     {
       "name": "produkt5",
       "bom": {
-        "metal": 23,
-        "farba": 1,
-        "opakowanie": 1
+        "metal": 2,
+        "farba": 3,
+        "opakowanie": 2
       }
     },
     {
       "name": "produkt6",
       "bom": {
-        "metal": 23,
+        "metal": 5,
         "farba": 1,
-        "opakowanie": 1
+        "opakowanie": 5
       }
     }
   ],
@@ -79,12 +80,20 @@
       2
     ],
     [
-      1,
       2,
-      4,
-      6,
-      3,
+      2,
+      2,
+      2,
+      2,
       2
+    ],
+    [
+      2,
+      3,
+      1,
+      1,
+      1,
+      1
     ],
     [
       1,
@@ -96,45 +105,49 @@
     ],
     [
       1,
-      2,
       4,
-      6,
-      3,
-      2
-    ],
-    [
-      1,
-      2,
-      4,
-      6,
-      3,
-      2
+      5,
+      5,
+      5,
+      5
     ]
   ],
   "orders": [
     {
       "name": "zamowienie1",
-      "dueDate": "2018-06-05",
-      "items": {
-        "produkt1": 134,
-        "produkt6": 13
-      }
+      "dueDate": "2018-06-04T00:00:00",
+      "product": "produkt1",
+      "qty": 12
     },
     {
       "name": "zamowienie2",
-      "dueDate": "2018-06-03",
-      "items": {
-        "produkt1": 11,
-        "produkt2": 13,
-        "produkt3": 4,
-        "produkt4": 8
-      }
+      "dueDate": "2018-06-04T00:00:00",
+      "product": "produkt2",
+      "qty": 6
+    },
+    {
+      "name": "zamowienie3",
+      "dueDate": "2018-06-04T00:00:00",
+      "product": "produkt3",
+      "qty": 11
+    },
+    {
+      "name": "zamowienie4",
+      "dueDate": "2018-06-04T00:00:00",
+      "product": "produkt4",
+      "qty": 2
+    },
+    {
+      "name": "zamowienie5",
+      "dueDate": "2018-06-04T00:00:00",
+      "product": "produkt5",
+      "qty": 9
     }
   ],
   "deliveries": [
     {
       "name": "dostawa1'",
-      "date": "2018-06-01",
+      "date": "2018-06-01T00:00:00",
       "rawMaterials": {
         "metal": 50,
         "farba": 50,
@@ -143,7 +156,7 @@
     },
     {
       "name": "dostawa2'",
-      "date": "2018-06-03",
+      "date": "2018-06-03T00:00:00",
       "rawMaterials": {
         "metal": 50,
         "farba": 50,
@@ -151,6 +164,5 @@
       }
     }
   ],
-  "timeout": 300,
-  "maxgGeneration": 2000
+  "maxGeneration": 2000
 }
